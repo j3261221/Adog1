@@ -1,0 +1,151 @@
+@import url('https://webfontworld.github.io/SCoreDream/SCoreDream.css');
+
+.gnb {
+    width: 100%;
+    max-height: 64px;
+    margin: 0;
+    background-color: #131519;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+
+    .container {
+        height: 64px;
+
+        .mainmenu-wrapper {
+            height: 64px;
+
+            .logo {
+                max-width: 180px;
+                overflow: hidden;
+                z-index: 4;
+                flex: 0 0 auto;
+                margin-right: 15px;
+            }
+
+            .top-menu {
+                width: 200px;
+                position: static;
+                flex: 0 0 auto;
+                height: 64px;
+                max-width: 200px;
+                margin-right: 15px;
+                transition: max-width .5s ease, opacity .3s;
+                font-family: "SCoreDream";
+                font-weight: 500;
+
+                .top-menu-list {
+                    flex: 0 0 auto;
+                    padding: 0;
+                    width: 100%;
+                    height: 100%;
+                    list-style: none;
+                    align-self: flex-start;
+                    position: static;
+                    z-index: 4;
+                    margin: 0 0;
+
+                    .top-menu-list-item {
+                        position: static;
+                        flex: 1 1 auto;
+                        width: auto;
+                        margin: 0;
+                        font-size: 18px;
+                        line-height: 21.6px;
+                        white-space: nowrap;
+                        overflow: hidden;
+
+                        .dot {
+                            width: 30px;
+                            height: 5px;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .search-container {
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1a1c21;
+            height: 45px;
+            margin: 0 auto;
+            border: 1px solid #dcdce5;
+            border-radius: 4px;
+            transition: max-width .5s ease;
+
+            .searchbar {
+                position: relative;
+                background-color: #1a1c21;
+                width: 100%;
+                height: 90%;
+                color: #dcdce5;
+                border: none;
+                outline: none;
+                margin: 10px;
+            }
+
+            .search-img {
+                width: 24px;
+                height: 24px;
+                margin: 0 8px;
+            }
+        }
+
+        .top-sidemenu {
+            flex: 0 0 auto;
+            margin: 0 8px;
+            height: 100%;
+            width: 280px;
+            max-width: 280px;
+            transition: max-width .5s ease, opacity .3s;
+
+            .top-sidemenu-list {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                height: 100%;
+
+                .top-side-menu-item {
+                    flex: 0 0 auto;
+
+                    .top-side-menu-link {
+                        display: block;
+                        border: none;
+                        cursor: pointer;
+                        background-color: #1a1c21;
+                        border-radius: 4px;
+                        padding: 8px 10px;
+                        font-size: 14px;
+                        line-height: 17px;
+                        text-decoration: none;
+                        box-shadow: 0 0 0 transparent;
+                        width: 56px;
+                        float: right;
+                        height: 18px;
+                    }
+
+
+                }
+
+                .login {
+                    margin-left: 16px;
+                    margin-right: 16px;
+                    min-width: 210px;
+                }
+            }
+
+
+        }
+    }
+}
+
+.search-open {
+
+    opacity: 0;
+    width: 0;
+    max-width: 0 !important;
+}
