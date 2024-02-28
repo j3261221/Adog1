@@ -1,6 +1,5 @@
 import Navbar from "../component/navbar";
 import TopMenu from "../component/topmenu";
-import "../../styles/annonce.scss"
 
 export default function News() {
     return (
